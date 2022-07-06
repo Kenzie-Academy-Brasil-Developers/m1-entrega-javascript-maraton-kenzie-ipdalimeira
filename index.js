@@ -1,13 +1,14 @@
-let participantes = ["Rafael ", "Manoel ", "Daniel "];
+let participantes = ["Rafael", "Manoel", "Daniel"];
 
 function positions (array){   
         let positionDaniel = array.indexOf ("Daniel")
         if (positionDaniel==0)  {
             return 'Daniel é o vencedor'
-        }else {
+        }else {        
             array.splice (positionDaniel -1, 0, "Daniel")
             array.splice (positionDaniel +1, 1)
             return `Este é o pódio ${array}`
+            
         }      
 } 
     console.log(positions(participantes))
